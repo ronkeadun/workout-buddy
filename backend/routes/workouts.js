@@ -1,4 +1,5 @@
 const express = require("express")
+const router = express.Router()
 const {
     createWorkout, 
     getAllWorkouts, 
@@ -6,8 +7,6 @@ const {
     deleteWorkout,
     updateWorkout
 } = require("../controllers/workoutControllers")
-
-const router = express.Router()
 
 //Get all workouts
 router.get("/", getAllWorkouts)
